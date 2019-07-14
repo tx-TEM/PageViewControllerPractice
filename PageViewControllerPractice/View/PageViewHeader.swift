@@ -5,10 +5,12 @@ class PageViewHeader: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        commonInit()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        commonInit()
     }
 
     func commonInit() {
@@ -18,8 +20,11 @@ class PageViewHeader: UIView {
             fatalError()
         }
         view.frame = bounds
-        view.backgroundColor = UIColor.red
         addSubview(view)
+    }
+
+    static var height: CGFloat {
+        return 100
     }
 
 }

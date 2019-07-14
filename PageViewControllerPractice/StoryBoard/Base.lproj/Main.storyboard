@@ -17,7 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AI3-hT-Sre" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vS-9j-8NT" customClass="PageViewHeader" customModule="PageViewControllerPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5Fk-HG-Vsb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUG-BE-aEe" customClass="PageViewTab" customModule="PageViewControllerPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wUG-BE-aEe" firstAttribute="leading" secondItem="AI3-hT-Sre" secondAttribute="leading" id="1Id-nA-q2s"/>
+                                    <constraint firstItem="3vS-9j-8NT" firstAttribute="top" secondItem="AI3-hT-Sre" secondAttribute="top" id="DQx-SC-owI"/>
+                                    <constraint firstItem="wUG-BE-aEe" firstAttribute="top" secondItem="3vS-9j-8NT" secondAttribute="bottom" id="FKX-HD-8Oa"/>
+                                    <constraint firstAttribute="trailing" secondItem="wUG-BE-aEe" secondAttribute="trailing" id="J3f-em-zq0"/>
+                                    <constraint firstAttribute="height" constant="150" id="Wn6-Ba-vjc"/>
+                                    <constraint firstAttribute="bottom" secondItem="wUG-BE-aEe" secondAttribute="bottom" id="af4-bv-WcH"/>
+                                    <constraint firstAttribute="trailing" secondItem="3vS-9j-8NT" secondAttribute="trailing" id="e1W-8l-7yg"/>
+                                    <constraint firstItem="3vS-9j-8NT" firstAttribute="leading" secondItem="AI3-hT-Sre" secondAttribute="leading" id="jc7-Y6-zPh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AI3-hT-Sre" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NbL-LG-SQz"/>
+                            <constraint firstItem="AI3-hT-Sre" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OvJ-a0-pSl"/>
+                            <constraint firstItem="AI3-hT-Sre" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tSq-hl-vhp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageViewTab" customModule="PageViewControllerPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="TabAView" destination="WKD-1t-RoB" id="QMp-v2-DKJ"/>
+                <outlet property="TabBView" destination="UyQ-v8-sj3" id="UIq-S2-DEd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-e1-upi" userLabel="Inner View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khk-aN-fD9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKD-1t-RoB" userLabel="TabA Button">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-nB-Jmt" userLabel="TabA">
+                                            <rect key="frame" x="84.5" y="20" width="38.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.52071345840000005" green="1" blue="0.69136595040000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="OSw-nB-Jmt" firstAttribute="centerX" secondItem="WKD-1t-RoB" secondAttribute="centerX" id="Efx-dj-xDw"/>
+                                        <constraint firstItem="OSw-nB-Jmt" firstAttribute="centerY" secondItem="WKD-1t-RoB" secondAttribute="centerY" id="RlS-P0-NCn"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyQ-v8-sj3" userLabel="TabB Button">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp5-9y-FxO" userLabel="TabA">
+                                            <rect key="frame" x="84.5" y="20" width="38.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="lp5-9y-FxO" firstAttribute="centerX" secondItem="UyQ-v8-sj3" secondAttribute="centerX" id="A4B-bg-vZe"/>
+                                        <constraint firstItem="lp5-9y-FxO" firstAttribute="centerY" secondItem="UyQ-v8-sj3" secondAttribute="centerY" id="l8B-Ee-W2R"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="WKD-1t-RoB" firstAttribute="width" secondItem="Khk-aN-fD9" secondAttribute="width" multiplier="0.5" id="nEk-f1-JhY"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Khk-aN-fD9" firstAttribute="top" secondItem="8nJ-e1-upi" secondAttribute="top" id="0cF-KB-dxX"/>
+                        <constraint firstItem="Khk-aN-fD9" firstAttribute="leading" secondItem="8nJ-e1-upi" secondAttribute="leading" id="BMO-Pe-YRo"/>
+                        <constraint firstAttribute="trailing" secondItem="Khk-aN-fD9" secondAttribute="trailing" id="BrO-J6-gvI"/>
+                        <constraint firstAttribute="bottom" secondItem="Khk-aN-fD9" secondAttribute="bottom" id="Lzg-Hw-UP3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8nJ-e1-upi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KQF-Kc-41t"/>
+                <constraint firstAttribute="trailing" secondItem="8nJ-e1-upi" secondAttribute="trailing" id="Kf4-Tu-weR"/>
+                <constraint firstItem="8nJ-e1-upi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WD5-aW-2ua"/>
+                <constraint firstAttribute="bottom" secondItem="8nJ-e1-upi" secondAttribute="bottom" id="oDv-4q-GiT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="214.95535714285714"/>
+        </view>
+    </objects>
+</document>

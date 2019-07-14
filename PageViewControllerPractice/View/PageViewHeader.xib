@@ -17,24 +17,40 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSx-Zs-1JY" userLabel="Inner View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-Sy-m8G">
+                            <rect key="frame" x="167" y="30" width="80" height="40"/>
+                            <color key="backgroundColor" red="0.96620899439999997" green="0.1134398321" blue="0.24503577009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="CeC-bl-Yyc"/>
+                                <constraint firstAttribute="height" constant="40" id="Z7U-1e-VSX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KXz-Sy-m8G" firstAttribute="centerX" secondItem="mSx-Zs-1JY" secondAttribute="centerX" id="KO2-vD-uCn"/>
+                        <constraint firstItem="KXz-Sy-m8G" firstAttribute="centerY" secondItem="mSx-Zs-1JY" secondAttribute="centerY" id="lyB-hH-TqW"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="mSx-Zs-1JY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7kK-wV-IKy"/>
                 <constraint firstAttribute="bottom" secondItem="mSx-Zs-1JY" secondAttribute="bottom" id="FIT-q3-j0b"/>
+                <constraint firstItem="mSx-Zs-1JY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YSB-rL-Kl9"/>
                 <constraint firstAttribute="trailing" secondItem="mSx-Zs-1JY" secondAttribute="trailing" id="aEd-IK-d17"/>
+                <constraint firstItem="mSx-Zs-1JY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gau-Gu-d7V"/>
                 <constraint firstItem="mSx-Zs-1JY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sb4-Wn-MvF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="71" y="94"/>
+            <point key="canvasLocation" x="69.565217391304358" y="104.46428571428571"/>
         </view>
     </objects>
 </document>

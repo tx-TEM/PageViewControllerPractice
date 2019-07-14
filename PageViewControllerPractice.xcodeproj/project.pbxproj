@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F22778022DBAEA9004DDEE5 /* PageViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22777F22DBAEA9004DDEE5 /* PageViewHeader.swift */; };
+		6F22778222DBB2E7004DDEE5 /* PageViewTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F22778122DBB2E7004DDEE5 /* PageViewTab.xib */; };
+		6F22778422DBB2FF004DDEE5 /* PageViewTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22778322DBB2FF004DDEE5 /* PageViewTab.swift */; };
 		6F35263622DBA86D0023E435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35263522DBA86D0023E435 /* AppDelegate.swift */; };
 		6F35263822DBA86D0023E435 /* CommonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35263722DBA86D0023E435 /* CommonPageViewController.swift */; };
 		6F35263B22DBA86D0023E435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F35263922DBA86D0023E435 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		3C1EDC301F45FC8C199EC46C /* Pods-PageViewControllerPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageViewControllerPractice.release.xcconfig"; path = "Target Support Files/Pods-PageViewControllerPractice/Pods-PageViewControllerPractice.release.xcconfig"; sourceTree = "<group>"; };
 		6F22777F22DBAEA9004DDEE5 /* PageViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewHeader.swift; sourceTree = "<group>"; };
+		6F22778122DBB2E7004DDEE5 /* PageViewTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageViewTab.xib; sourceTree = "<group>"; };
+		6F22778322DBB2FF004DDEE5 /* PageViewTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewTab.swift; sourceTree = "<group>"; };
 		6F35263222DBA86D0023E435 /* PageViewControllerPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewControllerPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F35263522DBA86D0023E435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F35263722DBA86D0023E435 /* CommonPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPageViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			children = (
 				6F22777F22DBAEA9004DDEE5 /* PageViewHeader.swift */,
 				6F84BA0222DBACC200AC0D56 /* PageViewHeader.xib */,
+				6F22778322DBB2FF004DDEE5 /* PageViewTab.swift */,
+				6F22778122DBB2E7004DDEE5 /* PageViewTab.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				6F35264322DBA8710023E435 /* LaunchScreen.storyboard in Resources */,
 				6F35264022DBA8710023E435 /* Assets.xcassets in Resources */,
 				6F35263B22DBA86D0023E435 /* Main.storyboard in Resources */,
+				6F22778222DBB2E7004DDEE5 /* PageViewTab.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +252,7 @@
 			files = (
 				6F35263E22DBA86D0023E435 /* PageViewControllerPractice.xcdatamodeld in Sources */,
 				6F35263822DBA86D0023E435 /* CommonPageViewController.swift in Sources */,
+				6F22778422DBB2FF004DDEE5 /* PageViewTab.swift in Sources */,
 				6F35264F22DBA99B0023E435 /* ScrollViewController.swift in Sources */,
 				6F35263622DBA86D0023E435 /* AppDelegate.swift in Sources */,
 				6F22778022DBAEA9004DDEE5 /* PageViewHeader.swift in Sources */,
